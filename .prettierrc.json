@@ -8,7 +8,8 @@
         "*.sql"
       ],
       "options": {
-        "parser": "postgresql"
+        "parser": "postgresql",
+        "sqlKeywordCase": "upper"
       }
     }
   ]
