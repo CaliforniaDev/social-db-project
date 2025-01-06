@@ -19,16 +19,12 @@
 -- Automatically created indexes do not show up in the indexes list
 
 
-
+-- Without index: 1.249ms
 -- With index: 0.075ms  17% faster
 EXPLAIN ANALYZE SELECT * 
 FROM users
 WHERE username = 'Emil30';
 
--- Without index: 1.249ms
-EXPLAIN ANALYZE SELECT * 
-FROM users
-WHERE username = 'Emil30';
 
 -- Show the size of the users table with the index
 SELECT pg_size_pretty(pg_relation_size('users'));
