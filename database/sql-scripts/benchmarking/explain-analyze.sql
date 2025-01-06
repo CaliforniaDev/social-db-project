@@ -28,3 +28,17 @@ EXPLAIN ANALYZE
 SELECT *
 FROM pg_stats
 WHERE tablename = 'users';
+
+-- This query will not use the index because process cost is higher than the sequential scan
+EXPLAIN
+  SELECT *
+  FROM likes
+  WHERE created_at > '2013-01-01';
+
+-- This query will use the index because process cost is lower than the sequential scan
+  EXPLAIN
+  SELECT *
+  FROM likes
+  WHERE created_at < '2013-01-01';
+
+CREATE INDEX likes_created_at_idx ON likes (created_at);
