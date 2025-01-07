@@ -5,10 +5,16 @@
 */
 
 WITH RECURSIVE
-  booty(val) AS (
+  countdown(val) AS (
     SELECT 3 AS val -- initial, non-recursive query
     UNION
-    SELECT val - 1 FROM booty WHERE val > 1 -- recursive query
+    SELECT val - 1 FROM countdown WHERE val > 1 -- recursive query
   )
 SELECT *
-FROM booty;
+FROM countdown;
+
+
+
+
+
+
