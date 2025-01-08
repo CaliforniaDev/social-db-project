@@ -9,3 +9,8 @@ CREATE VIEW recent_posts AS
     ORDER BY created_at DESC
     LIMIT 10
   );
+
+SELECT username
+FROM
+  recent_posts
+  JOIN users ON users.id = recent_posts.user_id;
