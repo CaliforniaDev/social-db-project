@@ -38,7 +38,7 @@ CREATE MATERIALIZED VIEW weekly_likes AS
 
 SELECT * FROM weekly_likes;
 
-DELETE FROM posts
-WHERE created_at < '2010-02-01';
+-- DELETE FROM posts
+-- WHERE created_at < '2010-02-01';
 
 REFRESH MATERIALIZED VIEW weekly_likes; -- REFRESH updates the materialized view with the current data
