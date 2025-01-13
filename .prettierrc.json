@@ -4,9 +4,7 @@
   ],
   "overrides": [
     {
-      "files": [
-        "*.sql"
-      ],
+      "files": ["*.sql"],
       "options": {
         "parser": "postgresql",
         "sqlKeywordCase": "upper"
