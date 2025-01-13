@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/CaliforniaDev/social-db-project/issues"
   },
-  "homepage": "https://github.com/CaliforniaDev/social-db-project#readme"
+  "homepage": "https://github.com/CaliforniaDev/social-db-project#readme",
+  "dependencies": {
+    "node-pg-migrate": "^7.9.0",
+    "pg": "^8.13.1"
+  }
 }
