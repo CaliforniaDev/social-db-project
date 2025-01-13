@@ -1,0 +1,20 @@
+{
+  "name": "social-db-project",
+  "version": "1.0.0",
+  "description": "This project is a PostgreSQL database designed to handle core functionalities of a social media platform, including user-generated comments and hashtags, inspired by Instagram. The database structure supports efficient storage, retrieval, and analysis of data, incorporating key features like:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaliforniaDev/social-db-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaliforniaDev/social-db-project/issues"
+  },
+  "homepage": "https://github.com/CaliforniaDev/social-db-project#readme"
+}
