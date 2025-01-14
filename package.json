@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/CaliforniaDev/social-db-project#readme",
   "dependencies": {
+    "express": "^4.21.2",
     "node-pg-migrate": "^7.9.0",
     "pg": "^8.13.1"
   },
