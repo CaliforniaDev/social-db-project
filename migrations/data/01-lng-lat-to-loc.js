@@ -1,3 +1,7 @@
+/**
+ * The purpose of this migration is to update/copy the loc column in the posts table from the existing lng and lat columns.
+ */
+
 const pg = require("pg");
 
 const pool = new pg.Pool({
